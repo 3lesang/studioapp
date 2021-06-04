@@ -8,6 +8,7 @@ namespace QLFILM
 {
     static class Program
     {
+        //Kiem tra tinh nang push
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
