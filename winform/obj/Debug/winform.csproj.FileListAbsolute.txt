@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\window\winform\obj\Debug\winform.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\window\winform\obj\Debug\winform.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\window\winform\bin\Debug\winform.exe.config
+C:\Users\User\Desktop\window\winform\bin\Debug\winform.exe
+C:\Users\User\Desktop\window\winform\bin\Debug\winform.pdb
+C:\Users\User\Desktop\window\winform\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\window\winform\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\window\winform\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\window\winform\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\window\winform\obj\Debug\winform.csproj.CopyComplete
+C:\Users\User\Desktop\window\winform\obj\Debug\winform.exe
+C:\Users\User\Desktop\window\winform\obj\Debug\winform.pdb
