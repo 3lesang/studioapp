@@ -11,7 +11,6 @@ C:\Users\ADMIN\Desktop\KtraCuoiKiLTwin\QLFILM\obj\Debug\QLFILM.pdb
 D:\sang\Documents\QLFILM\QLFILM\bin\Debug\QLFILM.exe.config
 D:\sang\Documents\QLFILM\QLFILM\bin\Debug\QLFILM.exe
 D:\sang\Documents\QLFILM\QLFILM\bin\Debug\QLFILM.pdb
-D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.csprojAssemblyReference.cache
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Properties.Resources.resources
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.csproj.GenerateResource.cache
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.csproj.CoreCompileInputs.cache
