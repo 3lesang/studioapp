@@ -10,3 +10,14 @@ C:\Users\User\Desktop\window\winform\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\User\Desktop\window\winform\obj\Debug\winform.csproj.CopyComplete
 C:\Users\User\Desktop\window\winform\obj\Debug\winform.exe
 C:\Users\User\Desktop\window\winform\obj\Debug\winform.pdb
+D:\sang\Documents\QLFILM\winform\bin\Debug\winform.exe.config
+D:\sang\Documents\QLFILM\winform\bin\Debug\winform.exe
+D:\sang\Documents\QLFILM\winform\bin\Debug\winform.pdb
+D:\sang\Documents\QLFILM\winform\bin\Debug\EntityFramework.dll
+D:\sang\Documents\QLFILM\winform\bin\Debug\EntityFramework.SqlServer.dll
+D:\sang\Documents\QLFILM\winform\bin\Debug\EntityFramework.xml
+D:\sang\Documents\QLFILM\winform\bin\Debug\EntityFramework.SqlServer.xml
+D:\sang\Documents\QLFILM\winform\obj\Debug\winform.csproj.CoreCompileInputs.cache
+D:\sang\Documents\QLFILM\winform\obj\Debug\winform.csproj.CopyComplete
+D:\sang\Documents\QLFILM\winform\obj\Debug\winform.exe
+D:\sang\Documents\QLFILM\winform\obj\Debug\winform.pdb

@@ -13,7 +13,7 @@ namespace winform
         static void Main(string[] args)
         {
             Database.SetInitializer(new Initializer());
-            //RunBasicQuery();
+            RunBasicQuery();
             //InsertData();
             //UpdateData();
             //DeleteData();
