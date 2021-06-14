@@ -35,7 +35,6 @@ D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.fActor.resources
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.fFilm.resources
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.fCategory.resources
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.fDirector.resources
-D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.csprojAssemblyReference.cache
 D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.fActor.resources
 D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.fCategory.resources
 D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.fDirector.resources

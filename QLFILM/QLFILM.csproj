@@ -201,6 +201,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="logo\bg.jpg" />
     <Content Include="logo\logofilm.ico" />
   </ItemGroup>
   <ItemGroup />

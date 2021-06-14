@@ -13,6 +13,7 @@ namespace QLFILM
 {
     public partial class fMain : Form
     {
+
         public fMain()
         {
             InitializeComponent();
@@ -22,31 +23,43 @@ namespace QLFILM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            fFilm f = new fFilm();
-            f.ShowDialog();
+            openChildForm(new fFilm());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            fCategory f = new fCategory();
-            f.ShowDialog();
+            openChildForm(new fCategory());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            fDirector f = new fDirector();
-            f.ShowDialog();
+            openChildForm(new fDirector());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            fActor f = new fActor();
-            f.ShowDialog();
+            openChildForm(new fActor());
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if(activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnChildForm.Controls.Add(childForm);
+            pnChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
     }
-}
+} 
