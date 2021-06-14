@@ -34,6 +34,7 @@
             this.delFilm = new System.Windows.Forms.Button();
             this.addFilm = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.cbDrector = new System.Windows.Forms.ComboBox();
             this.cbActor = new System.Windows.Forms.ComboBox();
@@ -55,7 +56,6 @@
             this.txtEnglishTitle = new System.Windows.Forms.TextBox();
             this.txtFilmID = new System.Windows.Forms.TextBox();
             this.dgFilm = new System.Windows.Forms.DataGridView();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFilm)).BeginInit();
@@ -67,20 +67,22 @@
             this.panel2.Controls.Add(this.editFilm);
             this.panel2.Controls.Add(this.delFilm);
             this.panel2.Controls.Add(this.addFilm);
-            this.panel2.Location = new System.Drawing.Point(12, 404);
+            this.panel2.Location = new System.Drawing.Point(0, 406);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 238);
+            this.panel2.Size = new System.Drawing.Size(497, 238);
             this.panel2.TabIndex = 5;
             // 
             // exitFilm
             // 
             this.exitFilm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(71)))), ((int)(((byte)(90)))));
+            this.exitFilm.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.exitFilm.FlatAppearance.BorderSize = 0;
             this.exitFilm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitFilm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.exitFilm.Location = new System.Drawing.Point(143, 181);
+            this.exitFilm.Location = new System.Drawing.Point(0, 188);
             this.exitFilm.Name = "exitFilm";
-            this.exitFilm.Size = new System.Drawing.Size(250, 50);
+            this.exitFilm.Size = new System.Drawing.Size(497, 50);
             this.exitFilm.TabIndex = 3;
             this.exitFilm.Text = "CLOSE";
             this.exitFilm.UseVisualStyleBackColor = false;
@@ -89,12 +91,14 @@
             // editFilm
             // 
             this.editFilm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(147)))), ((int)(((byte)(249)))));
+            this.editFilm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editFilm.FlatAppearance.BorderSize = 0;
             this.editFilm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editFilm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.editFilm.Location = new System.Drawing.Point(143, 120);
+            this.editFilm.Location = new System.Drawing.Point(0, 100);
             this.editFilm.Name = "editFilm";
-            this.editFilm.Size = new System.Drawing.Size(250, 50);
+            this.editFilm.Size = new System.Drawing.Size(497, 50);
             this.editFilm.TabIndex = 2;
             this.editFilm.Text = "EDIT";
             this.editFilm.UseVisualStyleBackColor = false;
@@ -102,12 +106,14 @@
             // delFilm
             // 
             this.delFilm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.delFilm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.delFilm.FlatAppearance.BorderSize = 0;
             this.delFilm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delFilm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.delFilm.Location = new System.Drawing.Point(143, 62);
+            this.delFilm.Location = new System.Drawing.Point(0, 50);
             this.delFilm.Name = "delFilm";
-            this.delFilm.Size = new System.Drawing.Size(250, 50);
+            this.delFilm.Size = new System.Drawing.Size(497, 50);
             this.delFilm.TabIndex = 1;
             this.delFilm.Text = "DELETE";
             this.delFilm.UseVisualStyleBackColor = false;
@@ -115,12 +121,14 @@
             // addFilm
             // 
             this.addFilm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(250)))), ((int)(((byte)(123)))));
+            this.addFilm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addFilm.FlatAppearance.BorderSize = 0;
             this.addFilm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addFilm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addFilm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.addFilm.Location = new System.Drawing.Point(143, 3);
+            this.addFilm.Location = new System.Drawing.Point(0, 0);
             this.addFilm.Name = "addFilm";
-            this.addFilm.Size = new System.Drawing.Size(250, 50);
+            this.addFilm.Size = new System.Drawing.Size(497, 50);
             this.addFilm.TabIndex = 0;
             this.addFilm.Text = "ADD";
             this.addFilm.UseVisualStyleBackColor = false;
@@ -148,18 +156,30 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtEnglishTitle);
             this.panel1.Controls.Add(this.txtFilmID);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.panel1.Location = new System.Drawing.Point(12, -1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(560, 409);
+            this.panel1.Size = new System.Drawing.Size(503, 409);
             this.panel1.TabIndex = 4;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.label11.Location = new System.Drawing.Point(5, 7);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 25);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "INFOR";
             // 
             // cbCategory
             // 
             this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(436, 149);
+            this.cbCategory.Location = new System.Drawing.Point(366, 149);
             this.cbCategory.Name = "cbCategory";
             this.cbCategory.Size = new System.Drawing.Size(121, 33);
             this.cbCategory.TabIndex = 22;
@@ -168,7 +188,7 @@
             // 
             this.cbDrector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDrector.FormattingEnabled = true;
-            this.cbDrector.Location = new System.Drawing.Point(436, 96);
+            this.cbDrector.Location = new System.Drawing.Point(366, 96);
             this.cbDrector.Name = "cbDrector";
             this.cbDrector.Size = new System.Drawing.Size(121, 33);
             this.cbDrector.TabIndex = 21;
@@ -177,7 +197,7 @@
             // 
             this.cbActor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbActor.FormattingEnabled = true;
-            this.cbActor.Location = new System.Drawing.Point(436, 54);
+            this.cbActor.Location = new System.Drawing.Point(366, 54);
             this.cbActor.Name = "cbActor";
             this.cbActor.Size = new System.Drawing.Size(121, 33);
             this.cbActor.TabIndex = 20;
@@ -187,7 +207,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.label8.Location = new System.Drawing.Point(322, 152);
+            this.label8.Location = new System.Drawing.Point(252, 152);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(92, 25);
             this.label8.TabIndex = 19;
@@ -198,7 +218,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.label9.Location = new System.Drawing.Point(322, 96);
+            this.label9.Location = new System.Drawing.Point(252, 96);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(79, 25);
             this.label9.TabIndex = 17;
@@ -209,7 +229,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.label10.Location = new System.Drawing.Point(322, 54);
+            this.label10.Location = new System.Drawing.Point(252, 54);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(58, 25);
             this.label10.TabIndex = 16;
@@ -228,7 +248,7 @@
             // 
             // txtGross
             // 
-            this.txtGross.Location = new System.Drawing.Point(162, 345);
+            this.txtGross.Location = new System.Drawing.Point(92, 345);
             this.txtGross.Name = "txtGross";
             this.txtGross.Size = new System.Drawing.Size(158, 30);
             this.txtGross.TabIndex = 12;
@@ -257,14 +277,14 @@
             // 
             // txtGating
             // 
-            this.txtGating.Location = new System.Drawing.Point(162, 300);
+            this.txtGating.Location = new System.Drawing.Point(92, 300);
             this.txtGating.Name = "txtGating";
             this.txtGating.Size = new System.Drawing.Size(158, 30);
             this.txtGating.TabIndex = 9;
             // 
             // txtLength
             // 
-            this.txtLength.Location = new System.Drawing.Point(162, 253);
+            this.txtLength.Location = new System.Drawing.Point(92, 253);
             this.txtLength.Name = "txtLength";
             this.txtLength.Size = new System.Drawing.Size(158, 30);
             this.txtLength.TabIndex = 8;
@@ -287,20 +307,20 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
             this.label4.Location = new System.Drawing.Point(-1, 152);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 25);
+            this.label4.Size = new System.Drawing.Size(77, 25);
             this.label4.TabIndex = 6;
-            this.label4.Text = "VietnameseTitle";
+            this.label4.Text = "VNTitle";
             // 
             // txtYear
             // 
-            this.txtYear.Location = new System.Drawing.Point(162, 202);
+            this.txtYear.Location = new System.Drawing.Point(92, 202);
             this.txtYear.Name = "txtYear";
             this.txtYear.Size = new System.Drawing.Size(158, 30);
             this.txtYear.TabIndex = 5;
             // 
             // txtVietnameseTitle
             // 
-            this.txtVietnameseTitle.Location = new System.Drawing.Point(162, 155);
+            this.txtVietnameseTitle.Location = new System.Drawing.Point(92, 155);
             this.txtVietnameseTitle.Name = "txtVietnameseTitle";
             this.txtVietnameseTitle.Size = new System.Drawing.Size(158, 30);
             this.txtVietnameseTitle.TabIndex = 4;
@@ -312,9 +332,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
             this.label2.Location = new System.Drawing.Point(3, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 25);
+            this.label2.Size = new System.Drawing.Size(76, 25);
             this.label2.TabIndex = 3;
-            this.label2.Text = "EnglishTitle";
+            this.label2.Text = "ENTitle";
             // 
             // label1
             // 
@@ -328,14 +348,14 @@
             // 
             // txtEnglishTitle
             // 
-            this.txtEnglishTitle.Location = new System.Drawing.Point(162, 96);
+            this.txtEnglishTitle.Location = new System.Drawing.Point(92, 96);
             this.txtEnglishTitle.Name = "txtEnglishTitle";
             this.txtEnglishTitle.Size = new System.Drawing.Size(158, 30);
             this.txtEnglishTitle.TabIndex = 1;
             // 
             // txtFilmID
             // 
-            this.txtFilmID.Location = new System.Drawing.Point(162, 49);
+            this.txtFilmID.Location = new System.Drawing.Point(92, 49);
             this.txtFilmID.Name = "txtFilmID";
             this.txtFilmID.Size = new System.Drawing.Size(158, 30);
             this.txtFilmID.TabIndex = 0;
@@ -345,22 +365,12 @@
             this.dgFilm.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
             this.dgFilm.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgFilm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgFilm.Location = new System.Drawing.Point(578, -1);
+            this.dgFilm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgFilm.Location = new System.Drawing.Point(503, 0);
             this.dgFilm.Name = "dgFilm";
             this.dgFilm.RowTemplate.Height = 28;
-            this.dgFilm.Size = new System.Drawing.Size(702, 652);
+            this.dgFilm.Size = new System.Drawing.Size(775, 644);
             this.dgFilm.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.label11.Location = new System.Drawing.Point(5, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 25);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "INFOR";
             // 
             // fFilm
             // 

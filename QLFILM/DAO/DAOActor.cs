@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLFILM.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,11 @@ namespace QLFILM.DAO
                 s.AID,
                 s.ActorName
             }).ToList();
+        }
+        public void AddActor(Actor ac)
+        {
+            db.Actors.Add(ac);
+            db.SaveChanges();
         }
     }
 }

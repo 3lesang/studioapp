@@ -95,43 +95,46 @@
     <Compile Include="fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140126166_CreateTable.cs" />
-    <Compile Include="Migrations\202106140126166_CreateTable.designer.cs">
-      <DependentUpon>202106140126166_CreateTable.cs</DependentUpon>
+    <Compile Include="Migrations\202106141627065_CreateTable.cs" />
+    <Compile Include="Migrations\202106141627065_CreateTable.designer.cs">
+      <DependentUpon>202106141627065_CreateTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140128508_AddDataIntoActors.cs" />
-    <Compile Include="Migrations\202106140128508_AddDataIntoActors.designer.cs">
-      <DependentUpon>202106140128508_AddDataIntoActors.cs</DependentUpon>
+    <Compile Include="Migrations\202106141632017_AddDataIntoActors.cs" />
+    <Compile Include="Migrations\202106141632017_AddDataIntoActors.designer.cs">
+      <DependentUpon>202106141632017_AddDataIntoActors.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140146102_AddDataIntoFilms.cs" />
-    <Compile Include="Migrations\202106140146102_AddDataIntoFilms.designer.cs">
-      <DependentUpon>202106140146102_AddDataIntoFilms.cs</DependentUpon>
+    <Compile Include="Migrations\202106141634405_AddDataIntoFilms.cs" />
+    <Compile Include="Migrations\202106141634405_AddDataIntoFilms.designer.cs">
+      <DependentUpon>202106141634405_AddDataIntoFilms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140149413_AddDataIntoCategories.cs" />
-    <Compile Include="Migrations\202106140149413_AddDataIntoCategories.designer.cs">
-      <DependentUpon>202106140149413_AddDataIntoCategories.cs</DependentUpon>
+    <Compile Include="Migrations\202106141635531_AddDataIntoCategories.cs" />
+    <Compile Include="Migrations\202106141635531_AddDataIntoCategories.designer.cs">
+      <DependentUpon>202106141635531_AddDataIntoCategories.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140152088_AddDataIntoDirectors.cs" />
-    <Compile Include="Migrations\202106140152088_AddDataIntoDirectors.designer.cs">
-      <DependentUpon>202106140152088_AddDataIntoDirectors.cs</DependentUpon>
+    <Compile Include="Migrations\202106141637003_AddDataIntoDirectors.cs" />
+    <Compile Include="Migrations\202106141637003_AddDataIntoDirectors.designer.cs">
+      <DependentUpon>202106141637003_AddDataIntoDirectors.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140155153_AddDataIntoFilmActors.cs" />
-    <Compile Include="Migrations\202106140155153_AddDataIntoFilmActors.designer.cs">
-      <DependentUpon>202106140155153_AddDataIntoFilmActors.cs</DependentUpon>
+    <Compile Include="Migrations\202106141638179_AddDataIntoFilmActors.cs" />
+    <Compile Include="Migrations\202106141638179_AddDataIntoFilmActors.designer.cs">
+      <DependentUpon>202106141638179_AddDataIntoFilmActors.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140157586_AddDataIntoCategoryFilms.cs" />
-    <Compile Include="Migrations\202106140157586_AddDataIntoCategoryFilms.designer.cs">
-      <DependentUpon>202106140157586_AddDataIntoCategoryFilms.cs</DependentUpon>
+    <Compile Include="Migrations\202106141639365_AddDataIntoCategoryFilms.cs" />
+    <Compile Include="Migrations\202106141639365_AddDataIntoCategoryFilms.designer.cs">
+      <DependentUpon>202106141639365_AddDataIntoCategoryFilms.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202106140200506_AddDataIntoDirectorFilms.cs" />
-    <Compile Include="Migrations\202106140200506_AddDataIntoDirectorFilms.designer.cs">
-      <DependentUpon>202106140200506_AddDataIntoDirectorFilms.cs</DependentUpon>
+    <Compile Include="Migrations\202106141640364_AddDataIntoDirectorFilms.cs" />
+    <Compile Include="Migrations\202106141640364_AddDataIntoDirectorFilms.designer.cs">
+      <DependentUpon>202106141640364_AddDataIntoDirectorFilms.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Actor.cs" />
     <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\CategoryFilm.cs" />
     <Compile Include="Model\Director.cs" />
+    <Compile Include="Model\DirectorFilm.cs" />
     <Compile Include="Model\Film.cs" />
+    <Compile Include="Model\FilmActor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fActor.resx">
@@ -149,29 +152,29 @@
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140126166_CreateTable.resx">
-      <DependentUpon>202106140126166_CreateTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141627065_CreateTable.resx">
+      <DependentUpon>202106141627065_CreateTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140128508_AddDataIntoActors.resx">
-      <DependentUpon>202106140128508_AddDataIntoActors.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141632017_AddDataIntoActors.resx">
+      <DependentUpon>202106141632017_AddDataIntoActors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140146102_AddDataIntoFilms.resx">
-      <DependentUpon>202106140146102_AddDataIntoFilms.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141634405_AddDataIntoFilms.resx">
+      <DependentUpon>202106141634405_AddDataIntoFilms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140149413_AddDataIntoCategories.resx">
-      <DependentUpon>202106140149413_AddDataIntoCategories.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141635531_AddDataIntoCategories.resx">
+      <DependentUpon>202106141635531_AddDataIntoCategories.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140152088_AddDataIntoDirectors.resx">
-      <DependentUpon>202106140152088_AddDataIntoDirectors.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141637003_AddDataIntoDirectors.resx">
+      <DependentUpon>202106141637003_AddDataIntoDirectors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140155153_AddDataIntoFilmActors.resx">
-      <DependentUpon>202106140155153_AddDataIntoFilmActors.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141638179_AddDataIntoFilmActors.resx">
+      <DependentUpon>202106141638179_AddDataIntoFilmActors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140157586_AddDataIntoCategoryFilms.resx">
-      <DependentUpon>202106140157586_AddDataIntoCategoryFilms.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141639365_AddDataIntoCategoryFilms.resx">
+      <DependentUpon>202106141639365_AddDataIntoCategoryFilms.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202106140200506_AddDataIntoDirectorFilms.resx">
-      <DependentUpon>202106140200506_AddDataIntoDirectorFilms.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202106141640364_AddDataIntoDirectorFilms.resx">
+      <DependentUpon>202106141640364_AddDataIntoDirectorFilms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

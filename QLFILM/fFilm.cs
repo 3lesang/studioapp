@@ -23,6 +23,7 @@ namespace QLFILM
         private void fFilm_Load(object sender, EventArgs e)
         {
             busFilm.ShowFilm(dgFilm);
+            busFilm.ShowActor(cbActor);
         }
 
         private void exitFilm_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLFILM.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,11 @@ namespace QLFILM.DAO
                 s.DID,
                 s.DirectorName
             }).ToList();
+        }
+        public void AddDirector(Director di)
+        {
+            db.Directors.Add(di);
+            db.SaveChanges();
         }
     }
 }

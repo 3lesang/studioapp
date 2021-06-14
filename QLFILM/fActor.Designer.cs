@@ -30,6 +30,7 @@
         {
             this.dgActor = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtActorName = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@
             this.editActor = new System.Windows.Forms.Button();
             this.delActor = new System.Windows.Forms.Button();
             this.addActor = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgActor)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -50,10 +50,11 @@
             this.dgActor.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
             this.dgActor.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgActor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgActor.Location = new System.Drawing.Point(397, -2);
+            this.dgActor.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgActor.Location = new System.Drawing.Point(395, 0);
             this.dgActor.Name = "dgActor";
             this.dgActor.RowTemplate.Height = 28;
-            this.dgActor.Size = new System.Drawing.Size(583, 651);
+            this.dgActor.Size = new System.Drawing.Size(583, 644);
             this.dgActor.TabIndex = 0;
             // 
             // panel1
@@ -63,10 +64,23 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtActorName);
             this.panel1.Controls.Add(this.txtActorID);
-            this.panel1.Location = new System.Drawing.Point(-4, -2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(395, 329);
             this.panel1.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 25);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "INFOR";
             // 
             // label2
             // 
@@ -110,20 +124,23 @@
             this.panel2.Controls.Add(this.editActor);
             this.panel2.Controls.Add(this.delActor);
             this.panel2.Controls.Add(this.addActor);
-            this.panel2.Location = new System.Drawing.Point(-4, 318);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 329);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(395, 331);
+            this.panel2.Size = new System.Drawing.Size(395, 315);
             this.panel2.TabIndex = 2;
             // 
             // exitActor
             // 
             this.exitActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(71)))), ((int)(((byte)(90)))));
+            this.exitActor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.exitActor.FlatAppearance.BorderSize = 0;
             this.exitActor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitActor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.exitActor.Location = new System.Drawing.Point(61, 230);
+            this.exitActor.Location = new System.Drawing.Point(0, 265);
             this.exitActor.Name = "exitActor";
-            this.exitActor.Size = new System.Drawing.Size(250, 50);
+            this.exitActor.Size = new System.Drawing.Size(395, 50);
             this.exitActor.TabIndex = 3;
             this.exitActor.Text = "CLOSE";
             this.exitActor.UseVisualStyleBackColor = false;
@@ -132,12 +149,14 @@
             // editActor
             // 
             this.editActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(147)))), ((int)(((byte)(249)))));
+            this.editActor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.editActor.FlatAppearance.BorderSize = 0;
             this.editActor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.editActor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.editActor.Location = new System.Drawing.Point(61, 160);
+            this.editActor.Location = new System.Drawing.Point(0, 100);
             this.editActor.Name = "editActor";
-            this.editActor.Size = new System.Drawing.Size(250, 50);
+            this.editActor.Size = new System.Drawing.Size(395, 50);
             this.editActor.TabIndex = 2;
             this.editActor.Text = "EDIT";
             this.editActor.UseVisualStyleBackColor = false;
@@ -145,12 +164,14 @@
             // delActor
             // 
             this.delActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.delActor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.delActor.FlatAppearance.BorderSize = 0;
             this.delActor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delActor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.delActor.Location = new System.Drawing.Point(61, 87);
+            this.delActor.Location = new System.Drawing.Point(0, 50);
             this.delActor.Name = "delActor";
-            this.delActor.Size = new System.Drawing.Size(250, 50);
+            this.delActor.Size = new System.Drawing.Size(395, 50);
             this.delActor.TabIndex = 1;
             this.delActor.Text = "DELETE";
             this.delActor.UseVisualStyleBackColor = false;
@@ -158,26 +179,18 @@
             // addActor
             // 
             this.addActor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(250)))), ((int)(((byte)(123)))));
+            this.addActor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.addActor.FlatAppearance.BorderSize = 0;
             this.addActor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addActor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addActor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.addActor.Location = new System.Drawing.Point(61, 15);
+            this.addActor.Location = new System.Drawing.Point(0, 0);
             this.addActor.Name = "addActor";
-            this.addActor.Size = new System.Drawing.Size(250, 50);
+            this.addActor.Size = new System.Drawing.Size(395, 50);
             this.addActor.TabIndex = 0;
             this.addActor.Text = "ADD";
             this.addActor.UseVisualStyleBackColor = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.label11.Location = new System.Drawing.Point(5, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 25);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "INFOR";
+            this.addActor.Click += new System.EventHandler(this.addActor_Click);
             // 
             // fActor
             // 

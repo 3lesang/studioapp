@@ -1,4 +1,5 @@
 ﻿using QLFILM.DAO;
+using QLFILM.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,18 @@ namespace QLFILM.BUS
         public void ShowActor(DataGridView dg)
         {
             dg.DataSource = daoActor.GetActor();
+        }
+        public void AddActor(Actor ac)
+        {
+            try
+            {
+                daoActor.AddActor(ac);
+                MessageBox.Show("Success");
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }

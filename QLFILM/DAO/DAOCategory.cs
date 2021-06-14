@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLFILM.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,11 @@ namespace QLFILM.DAO
                 s.CID,
                 s.CategoryName
             }).ToList();
+        }
+        public void AddCategory(Category ca)
+        {
+            db.Categories.Add(ca);
+            db.SaveChanges();
         }
     }
 }

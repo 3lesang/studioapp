@@ -13,7 +13,7 @@ namespace QLFILM.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202106140128508_AddDataIntoActors"; }
+            get { return "202106141632017_AddDataIntoActors"; }
         }
         
         string IMigrationMetadata.Source

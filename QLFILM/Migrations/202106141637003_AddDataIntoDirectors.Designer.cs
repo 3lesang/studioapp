@@ -7,13 +7,13 @@ namespace QLFILM.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class AddDataIntoCategoryFilms : IMigrationMetadata
+    public sealed partial class AddDataIntoDirectors : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddDataIntoCategoryFilms));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddDataIntoDirectors));
         
         string IMigrationMetadata.Id
         {
-            get { return "202106140157586_AddDataIntoCategoryFilms"; }
+            get { return "202106141637003_AddDataIntoDirectors"; }
         }
         
         string IMigrationMetadata.Source

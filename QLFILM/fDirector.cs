@@ -1,4 +1,5 @@
 ﻿using QLFILM.BUS;
+using QLFILM.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,15 +20,28 @@ namespace QLFILM
             InitializeComponent();
             busDirector = new BUSDirector();
         }
-
+        public void Reload()
+        {
+            dgDirector.DataSource = null;
+            busDirector.ShowDirector(dgDirector);
+        }
         private void fDirector_Load(object sender, EventArgs e)
         {
-            busDirector.ShowFilm(dgDirector);
+            busDirector.ShowDirector(dgDirector);
         }
 
         private void exitDirector_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void addDirector_Click(object sender, EventArgs e)
+        {
+            Director di = new Director();
+            di.DID = txtDirectorID.Text;
+            di.DirectorName = txtDirectorName.Text;
+            busDirector.AddDirector(di);
+            Reload();
         }
     }
 }

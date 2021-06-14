@@ -19,5 +19,8 @@ namespace QLFILM
         public DbSet<Category> Categories { get; set; }
         public DbSet<Director> Directors { get; set; }
         public DbSet<Film> Films { get; set; }
+        public DbSet<FilmActor> FilmActors { get; set; }
+        public DbSet<CategoryFilm> CategoryFilms { get; set; }
+        public DbSet<DirectorFilm> DirectorFilms { get; set; }
     }
 }

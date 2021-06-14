@@ -25,5 +25,11 @@ namespace QLFILM.DAO
                 s.Gross
             }).ToList();
         }
+        public dynamic GetActor()
+        {
+            var actor = db.Actors
+                .SqlQuery("select AID, ActorName from Actors").ToList();
+            return actor;
+        }
     }
 }
