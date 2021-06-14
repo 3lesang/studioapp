@@ -19,7 +19,7 @@ namespace QLFILM.Model
         [Key]
         [Column(Order = 2)]
         public string AID { get; set; }
-        public Film Film { get; set; }
-        public Actor Actor { get; set; }
+        public virtual Film Film { get; set; }
+        public virtual Actor Actor { get; set; }
     }
 }

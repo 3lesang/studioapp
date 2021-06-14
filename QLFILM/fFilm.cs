@@ -24,6 +24,8 @@ namespace QLFILM
         {
             busFilm.ShowFilm(dgFilm);
             busFilm.ShowActor(cbActor);
+            busFilm.ShowCategory(cbCategory);
+            busFilm.ShowDirector(cbDrector);
         }
 
         private void exitFilm_Click(object sender, EventArgs e)

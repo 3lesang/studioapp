@@ -24,8 +24,8 @@ namespace QLFILM.Model
         public Nullable<double> Rating { get; set; }
         public Nullable<double> Gross { get; set; }
 
-        public ICollection<Actor> Actors { get; set; }
-        public ICollection<Category> Categories { get; set; }
-        public ICollection<Director> Directors { get; set; }
+        public virtual ICollection<Actor> Actors { get; set; }
+        public virtual ICollection<Category> Categories { get; set; }
+        public virtual ICollection<Director> Directors { get; set; }
     }
 }

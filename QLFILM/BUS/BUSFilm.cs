@@ -25,5 +25,17 @@ namespace QLFILM.BUS
             cb.DisplayMember = "ActorName";
             cb.ValueMember = "AID";
         }
+        public void ShowDirector(ComboBox cb)
+        {
+            cb.DataSource = daoFilm.GetDirector();
+            cb.DisplayMember = "DirectorName";
+            cb.ValueMember = "DID";
+        }
+        public void ShowCategory(ComboBox cb)
+        {
+            cb.DataSource = daoFilm.GetCategory();
+            cb.DisplayMember = "CategoryName";
+            cb.ValueMember = "CID";
+        }
     }
 }

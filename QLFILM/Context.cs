@@ -22,5 +22,21 @@ namespace QLFILM
         public DbSet<FilmActor> FilmActors { get; set; }
         public DbSet<CategoryFilm> CategoryFilms { get; set; }
         public DbSet<DirectorFilm> DirectorFilms { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<FilmActor>()
+                .HasRequired(a => a.Actor)
+                .WithMany()
+                .WillCascadeOnDelete();
+            modelBuilder.Entity<CategoryFilm>()
+                .HasRequired(a => a.Category)
+                .WithMany()
+                .WillCascadeOnDelete();
+            modelBuilder.Entity<DirectorFilm>()
+                .HasRequired(a => a.Director)
+                .WithMany()
+                .WillCascadeOnDelete();
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

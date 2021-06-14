@@ -56,6 +56,7 @@
             this.dgActor.RowTemplate.Height = 28;
             this.dgActor.Size = new System.Drawing.Size(583, 644);
             this.dgActor.TabIndex = 0;
+            
             // 
             // panel1
             // 

@@ -19,7 +19,7 @@ namespace QLFILM.Model
         [Key]
         [Column(Order = 2)]
         public string CID { get; set; }
-        public Film Film { get; set; }
-        public Category Category { get; set; }
+        public virtual Film Film { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

@@ -16,6 +16,6 @@ namespace QLFILM.Model
         [Key]
         public string CID { get; set; }
         public string CategoryName { get; set; }
-        public ICollection<Film> Films { get; set; }
+        public virtual ICollection<Film> Films { get; set; }
     }
 }

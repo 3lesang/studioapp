@@ -16,6 +16,6 @@ namespace QLFILM.Model
         [Key]
         public string AID { get; set; }
         public string ActorName { get; set; }
-        public ICollection<Film> Films { get; set; }
+        public virtual ICollection<Film> Films { get; set; }
     }
 }

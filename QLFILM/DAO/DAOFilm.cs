@@ -31,5 +31,17 @@ namespace QLFILM.DAO
                 .SqlQuery("select AID, ActorName from Actors").ToList();
             return actor;
         }
+        public dynamic GetDirector()
+        {
+            var actor = db.Directors
+                .SqlQuery("select DID, DirectorName from Directors").ToList();
+            return actor;
+        }
+        public dynamic GetCategory()
+        {
+            var actor = db.Categories
+                .SqlQuery("select CID, CategoryName from Categories").ToList();
+            return actor;
+        }
     }
 }
