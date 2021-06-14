@@ -23,25 +23,30 @@ namespace QLFILM
         private void button1_Click(object sender, EventArgs e)
         {
             fFilm f = new fFilm();
-            f.Show();
+            f.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             fCategory f = new fCategory();
-            f.Show();
+            f.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             fDirector f = new fDirector();
-            f.Show();
+            f.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             fActor f = new fActor();
-            f.Show();
+            f.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

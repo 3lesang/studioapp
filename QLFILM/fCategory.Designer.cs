@@ -39,6 +39,7 @@
             this.delCategory = new System.Windows.Forms.Button();
             this.addCategory = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgCategory)).BeginInit();
             this.panel2.SuspendLayout();
@@ -46,28 +47,32 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtCategoryName);
             this.panel1.Controls.Add(this.txtCategoryID);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, -6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(379, 300);
+            this.panel1.Size = new System.Drawing.Size(379, 356);
             this.panel1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 170);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.label2.Location = new System.Drawing.Point(30, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 20);
+            this.label2.Size = new System.Drawing.Size(70, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "NAME";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 83);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.label1.Location = new System.Drawing.Point(41, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 20);
             this.label1.TabIndex = 2;
@@ -89,48 +94,67 @@
             // 
             // dgCategory
             // 
+            this.dgCategory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.dgCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgCategory.Location = new System.Drawing.Point(397, 12);
+            this.dgCategory.Location = new System.Drawing.Point(397, -6);
             this.dgCategory.Name = "dgCategory";
             this.dgCategory.RowTemplate.Height = 28;
-            this.dgCategory.Size = new System.Drawing.Size(569, 620);
+            this.dgCategory.Size = new System.Drawing.Size(587, 655);
             this.dgCategory.TabIndex = 6;
             // 
             // exitCategory
             // 
-            this.exitCategory.Location = new System.Drawing.Point(14, 218);
+            this.exitCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(71)))), ((int)(((byte)(90)))));
+            this.exitCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.exitCategory.Location = new System.Drawing.Point(61, 231);
             this.exitCategory.Name = "exitCategory";
-            this.exitCategory.Size = new System.Drawing.Size(350, 50);
+            this.exitCategory.Size = new System.Drawing.Size(250, 50);
             this.exitCategory.TabIndex = 3;
-            this.exitCategory.Text = "EXIT";
-            this.exitCategory.UseVisualStyleBackColor = true;
+            this.exitCategory.Text = "CLOSE";
+            this.exitCategory.UseVisualStyleBackColor = false;
+            this.exitCategory.Click += new System.EventHandler(this.exitCategory_Click);
             // 
             // editCategory
             // 
-            this.editCategory.Location = new System.Drawing.Point(14, 148);
+            this.editCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(147)))), ((int)(((byte)(249)))));
+            this.editCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.editCategory.Location = new System.Drawing.Point(61, 161);
             this.editCategory.Name = "editCategory";
-            this.editCategory.Size = new System.Drawing.Size(350, 50);
+            this.editCategory.Size = new System.Drawing.Size(250, 50);
             this.editCategory.TabIndex = 2;
             this.editCategory.Text = "EDIT";
-            this.editCategory.UseVisualStyleBackColor = true;
+            this.editCategory.UseVisualStyleBackColor = false;
             // 
             // delCategory
             // 
-            this.delCategory.Location = new System.Drawing.Point(14, 75);
+            this.delCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.delCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.delCategory.Location = new System.Drawing.Point(61, 88);
             this.delCategory.Name = "delCategory";
-            this.delCategory.Size = new System.Drawing.Size(350, 50);
+            this.delCategory.Size = new System.Drawing.Size(250, 50);
             this.delCategory.TabIndex = 1;
             this.delCategory.Text = "DELETE";
-            this.delCategory.UseVisualStyleBackColor = true;
+            this.delCategory.UseVisualStyleBackColor = false;
             // 
             // addCategory
             // 
-            this.addCategory.Location = new System.Drawing.Point(14, 3);
+            this.addCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(250)))), ((int)(((byte)(123)))));
+            this.addCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.addCategory.Location = new System.Drawing.Point(61, 16);
             this.addCategory.Name = "addCategory";
-            this.addCategory.Size = new System.Drawing.Size(350, 50);
+            this.addCategory.Size = new System.Drawing.Size(250, 50);
             this.addCategory.TabIndex = 0;
             this.addCategory.Text = "ADD";
-            this.addCategory.UseVisualStyleBackColor = true;
+            this.addCategory.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -143,18 +167,30 @@
             this.panel2.Size = new System.Drawing.Size(379, 292);
             this.panel2.TabIndex = 8;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.label11.Location = new System.Drawing.Point(5, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 25);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "INFOR";
+            // 
             // fCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(978, 644);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgCategory);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "fCategory";
-            this.Text = "fCategory";
+            this.Text = "Category";
             this.Load += new System.EventHandler(this.fCategory_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -177,5 +213,6 @@
         private System.Windows.Forms.Button delCategory;
         private System.Windows.Forms.Button addCategory;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label11;
     }
 }

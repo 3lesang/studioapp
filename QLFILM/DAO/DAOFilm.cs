@@ -15,7 +15,15 @@ namespace QLFILM.DAO
         }
         public dynamic GetFilm()
         {
-            return db.Films.ToList();
+            return db.Films.Select(s => new {
+                s.FID,
+                s.EnglishTitle,
+                s.VietnameseTitle,
+                s.Year,
+                s.Length,
+                s.Rating,
+                s.Gross
+            }).ToList();
         }
     }
 }

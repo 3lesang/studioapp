@@ -24,5 +24,10 @@ namespace QLFILM
         {
             busCategory.ShowCategory(dgCategory);
         }
+
+        private void exitCategory_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

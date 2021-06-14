@@ -24,5 +24,10 @@ namespace QLFILM
         {
             busFilm.ShowFilm(dgFilm);
         }
+
+        private void exitFilm_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
