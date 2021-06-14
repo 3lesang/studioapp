@@ -22,3 +22,11 @@ D:\sang\Documents\QLFILM\QLFILM\bin\Debug\EntityFramework.xml
 D:\sang\Documents\QLFILM\QLFILM\bin\Debug\EntityFramework.SqlServer.xml
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.csproj.CopyComplete
 D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.fMain.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.CreateTable.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoActors.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoFilms.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoCategories.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoDirectors.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoFilmActors.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoCategoryFilms.resources
+D:\sang\Documents\QLFILM\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoDirectorFilms.resources
