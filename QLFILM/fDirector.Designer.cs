@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel4 = new System.Windows.Forms.Panel();
             this.exitDirector = new System.Windows.Forms.Button();
+            this.editDirector = new System.Windows.Forms.Button();
             this.delDirector = new System.Windows.Forms.Button();
             this.addDirector = new System.Windows.Forms.Button();
-            this.editDirector = new System.Windows.Forms.Button();
             this.dgDirector = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.txtDirectorID = new System.Windows.Forms.TextBox();
-            this.txtDirectorName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDirectorName = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgDirector)).BeginInit();
             this.panel2.SuspendLayout();
@@ -73,6 +75,21 @@
             this.exitDirector.UseVisualStyleBackColor = false;
             this.exitDirector.Click += new System.EventHandler(this.exitDirector_Click);
             // 
+            // editDirector
+            // 
+            this.editDirector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(147)))), ((int)(((byte)(249)))));
+            this.editDirector.Dock = System.Windows.Forms.DockStyle.Left;
+            this.editDirector.FlatAppearance.BorderSize = 0;
+            this.editDirector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editDirector.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editDirector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.editDirector.Location = new System.Drawing.Point(300, 0);
+            this.editDirector.Name = "editDirector";
+            this.editDirector.Size = new System.Drawing.Size(150, 50);
+            this.editDirector.TabIndex = 2;
+            this.editDirector.Text = "EDIT";
+            this.editDirector.UseVisualStyleBackColor = false;
+            // 
             // delDirector
             // 
             this.delDirector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
@@ -104,26 +121,28 @@
             this.addDirector.UseVisualStyleBackColor = false;
             this.addDirector.Click += new System.EventHandler(this.addDirector_Click);
             // 
-            // editDirector
-            // 
-            this.editDirector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(147)))), ((int)(((byte)(249)))));
-            this.editDirector.Dock = System.Windows.Forms.DockStyle.Left;
-            this.editDirector.FlatAppearance.BorderSize = 0;
-            this.editDirector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editDirector.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editDirector.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.editDirector.Location = new System.Drawing.Point(300, 0);
-            this.editDirector.Name = "editDirector";
-            this.editDirector.Size = new System.Drawing.Size(150, 50);
-            this.editDirector.TabIndex = 2;
-            this.editDirector.Text = "EDIT";
-            this.editDirector.UseVisualStyleBackColor = false;
-            // 
             // dgDirector
             // 
+            this.dgDirector.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgDirector.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
             this.dgDirector.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgDirector.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgDirector.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgDirector.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgDirector.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgDirector.Location = new System.Drawing.Point(0, 0);
             this.dgDirector.MinimumSize = new System.Drawing.Size(1178, 480);
@@ -135,8 +154,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.txtDirectorID);
             this.panel2.Controls.Add(this.txtDirectorName);
+            this.panel2.Controls.Add(this.txtDirectorID);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label2);
@@ -146,43 +165,14 @@
             this.panel2.Size = new System.Drawing.Size(1178, 158);
             this.panel2.TabIndex = 25;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(468, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "NAME";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(227, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ID";
-            // 
             // txtDirectorID
             // 
+            this.txtDirectorID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDirectorID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDirectorID.Location = new System.Drawing.Point(289, 60);
             this.txtDirectorID.Name = "txtDirectorID";
-            this.txtDirectorID.Size = new System.Drawing.Size(123, 26);
+            this.txtDirectorID.Size = new System.Drawing.Size(169, 30);
             this.txtDirectorID.TabIndex = 0;
-            // 
-            // txtDirectorName
-            // 
-            this.txtDirectorName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDirectorName.Location = new System.Drawing.Point(594, 59);
-            this.txtDirectorName.Name = "txtDirectorName";
-            this.txtDirectorName.Size = new System.Drawing.Size(123, 26);
-            this.txtDirectorName.TabIndex = 1;
             // 
             // label11
             // 
@@ -195,6 +185,37 @@
             this.label11.Size = new System.Drawing.Size(72, 25);
             this.label11.TabIndex = 24;
             this.label11.Text = "INFOR";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(227, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(31, 25);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(555, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "NAME";
+            // 
+            // txtDirectorName
+            // 
+            this.txtDirectorName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDirectorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDirectorName.Location = new System.Drawing.Point(647, 61);
+            this.txtDirectorName.Name = "txtDirectorName";
+            this.txtDirectorName.Size = new System.Drawing.Size(169, 30);
+            this.txtDirectorName.TabIndex = 25;
             // 
             // fDirector
             // 
@@ -227,9 +248,9 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txtDirectorID;
-        private System.Windows.Forms.TextBox txtDirectorName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtDirectorName;
     }
 }

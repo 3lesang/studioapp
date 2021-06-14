@@ -61,3 +61,30 @@ D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoDi
 D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoFilmActors.resources
 D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoCategoryFilms.resources
 D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoDirectorFilms.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\QLFILM.exe.config
+D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\QLFILM.exe
+D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\QLFILM.pdb
+D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\EntityFramework.dll
+D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\EntityFramework.SqlServer.dll
+D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\EntityFramework.xml
+D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\EntityFramework.SqlServer.xml
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.fActor.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.fCategory.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.fDirector.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.fFilm.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.fMain.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.CreateTable.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoActors.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoFilms.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoCategories.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoDirectors.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoFilmActors.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoCategoryFilms.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Migrations.AddDataIntoDirectorFilms.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.Properties.Resources.resources
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csproj.GenerateResource.cache
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csproj.CoreCompileInputs.cache
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csproj.CopyComplete
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.exe
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.pdb
+D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csprojAssemblyReference.cache
