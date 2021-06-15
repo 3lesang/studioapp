@@ -142,7 +142,7 @@
             this.dgCategory.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgCategory.Location = new System.Drawing.Point(0, 0);
             this.dgCategory.Name = "dgCategory";
-            this.dgCategory.RowTemplate.Height = 28;
+            this.dgCategory.RowTemplate.Height = 40;
             this.dgCategory.Size = new System.Drawing.Size(1178, 750);
             this.dgCategory.TabIndex = 6;
             this.dgCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCategory_CellClick);

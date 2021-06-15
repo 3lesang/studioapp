@@ -78,7 +78,7 @@
             this.dgDirector.Location = new System.Drawing.Point(0, 0);
             this.dgDirector.MinimumSize = new System.Drawing.Size(1178, 750);
             this.dgDirector.Name = "dgDirector";
-            this.dgDirector.RowTemplate.Height = 28;
+            this.dgDirector.RowTemplate.Height = 40;
             this.dgDirector.Size = new System.Drawing.Size(1178, 750);
             this.dgDirector.TabIndex = 3;
             this.dgDirector.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDirector_CellClick);

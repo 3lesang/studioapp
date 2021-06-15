@@ -122,9 +122,9 @@
             // 
             // cbCategory
             // 
-            this.cbCategory.DropDownHeight = 90;
+            this.cbCategory.DropDownHeight = 500;
             this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategory.DropDownWidth = 200;
+            this.cbCategory.DropDownWidth = 300;
             this.cbCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbCategory.Font = new System.Drawing.Font("Segoe UI Semilight", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory.FormattingEnabled = true;
@@ -138,9 +138,9 @@
             // 
             // cbDrector
             // 
-            this.cbDrector.DropDownHeight = 90;
+            this.cbDrector.DropDownHeight = 500;
             this.cbDrector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDrector.DropDownWidth = 200;
+            this.cbDrector.DropDownWidth = 300;
             this.cbDrector.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbDrector.Font = new System.Drawing.Font("Segoe UI Semilight", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDrector.FormattingEnabled = true;
@@ -154,9 +154,9 @@
             // 
             // cbActor
             // 
-            this.cbActor.DropDownHeight = 90;
+            this.cbActor.DropDownHeight = 500;
             this.cbActor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbActor.DropDownWidth = 200;
+            this.cbActor.DropDownWidth = 300;
             this.cbActor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbActor.Font = new System.Drawing.Font("Segoe UI Semilight", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbActor.FormattingEnabled = true;
@@ -358,7 +358,7 @@
             this.dgFilm.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgFilm.Location = new System.Drawing.Point(0, 0);
             this.dgFilm.Name = "dgFilm";
-            this.dgFilm.RowTemplate.Height = 28;
+            this.dgFilm.RowTemplate.Height = 40;
             this.dgFilm.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dgFilm.Size = new System.Drawing.Size(1178, 750);
             this.dgFilm.TabIndex = 3;
