@@ -20,17 +20,38 @@ namespace QLFILM.BUS
         {
             dg.DataSource = daoActor.GetActor();
         }
+        public dynamic GetActorByID(string ID)
+        {
+            return daoActor.GetActorByID(ID);
+        }
         public void AddActor(Actor ac)
         {
             try
             {
                 daoActor.AddActor(ac);
-                MessageBox.Show("Success");
+                MessageBox.Show("Add Success");
             }
             catch(Exception)
             {
-                MessageBox.Show("Error");
+                MessageBox.Show("Add Error");
             }
+        }
+        public void DeleteActor(Actor ac)
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if(result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoActor.DeleteActor(ac);
+                    MessageBox.Show("Delete Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Delete Error");
+                }
+            }
+            
         }
     }
 }

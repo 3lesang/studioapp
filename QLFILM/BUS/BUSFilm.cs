@@ -1,4 +1,5 @@
 ﻿using QLFILM.DAO;
+using QLFILM.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,39 @@ namespace QLFILM.BUS
         public void ShowFilm(DataGridView dg)
         {
             dg.DataSource = daoFilm.GetFilm();
+        }
+        public dynamic GetFilmByID(string ID)
+        {
+            return daoFilm.GetFilmByID(ID);
+        }
+        public void AddFilm(Film f)
+        {
+            try
+            {
+                daoFilm.AddFilm(f);
+                MessageBox.Show("Add Success");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Add Error");
+            }
+        }
+        public void DeleteFilm(Film f)
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoFilm.DeleteFilm(f);
+                    MessageBox.Show("Delete Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Delete Error");
+                }
+            }
+
         }
         public void ShowActor(ComboBox cb)
         {

@@ -20,6 +20,10 @@ namespace QLFILM.BUS
         {
             dg.DataSource = daoDirector.GetDirector();
         }
+        public dynamic GetDirectorByID(string ID)
+        {
+            return daoDirector.GetDirectorByID(ID);
+        }
         public void AddDirector(Director di)
         {
             try
@@ -31,6 +35,23 @@ namespace QLFILM.BUS
             {
                 MessageBox.Show("Error");
             }
+        }
+        public void DeleteActor(Director di)
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoDirector.DeleteDirector(di);
+                    MessageBox.Show("Delete Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Delete Error");
+                }
+            }
+
         }
     }
 }

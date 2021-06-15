@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLFILM.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,20 @@ namespace QLFILM.DAO
                 s.Rating,
                 s.Gross
             }).ToList();
+        }
+        public dynamic GetFilmByID(string ID)
+        {
+            return db.Films.Single(a => a.FID.Equals(ID));
+        }
+        public void AddFilm(Film f)
+        {
+            db.Films.Add(f);
+            db.SaveChanges();
+        }
+        public void DeleteFilm(Film f)
+        {
+            db.Films.Remove(f);
+            db.SaveChanges();
         }
         public dynamic GetActor()
         {

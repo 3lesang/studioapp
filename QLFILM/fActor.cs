@@ -43,5 +43,29 @@ namespace QLFILM
             busActor.AddActor(ac);
             Reload();
         }
+
+        private void dgActor_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string ID = this.dgActor.CurrentRow.Cells[0].Value.ToString();
+            Actor ac = busActor.GetActorByID(ID);
+            this.txtActorID.Text = ac.AID;
+            this.txtActorName.Text = ac.ActorName;
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgActor.CurrentRow.Cells[0].Value.ToString();
+            Actor ac = busActor.GetActorByID(ID);
+            busActor.DeleteActor(ac);
+            Reload();
+        }
+
+        private void delActor_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgActor.CurrentRow.Cells[0].Value.ToString();
+            Actor ac = busActor.GetActorByID(ID);
+            busActor.DeleteActor(ac);
+            Reload();
+        }
     }
 }

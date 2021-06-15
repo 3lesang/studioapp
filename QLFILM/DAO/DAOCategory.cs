@@ -22,9 +22,18 @@ namespace QLFILM.DAO
                 s.CategoryName
             }).ToList();
         }
+        public dynamic GetCategoryByID(string ID)
+        {
+            return db.Categories.Single(a => a.CID.Equals(ID));
+        }
         public void AddCategory(Category ca)
         {
             db.Categories.Add(ca);
+            db.SaveChanges();
+        }
+        public void DeleteCategory(Category ca)
+        {
+            db.Categories.Remove(ca);
             db.SaveChanges();
         }
     }

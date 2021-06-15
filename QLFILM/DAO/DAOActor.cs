@@ -22,9 +22,18 @@ namespace QLFILM.DAO
                 s.ActorName
             }).ToList();
         }
+        public dynamic GetActorByID(string ID)
+        {
+            return db.Actors.Single(a => a.AID.Equals(ID));
+        }
         public void AddActor(Actor ac)
         {
             db.Actors.Add(ac);
+            db.SaveChanges();
+        }
+        public void DeleteActor(Actor ac)
+        {
+            db.Actors.Remove(ac);
             db.SaveChanges();
         }
     }

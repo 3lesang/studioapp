@@ -43,5 +43,29 @@ namespace QLFILM
             busCategory.AddCategory(ca);
             Reload();
         }
+
+        private void dgCategory_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
+            Category ca = busCategory.GetCategoryByID(ID);
+            this.txtCategoryID.Text = ca.CID;
+            this.txtCategoryName.Text = ca.CategoryName;
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
+            Category ca = busCategory.GetCategoryByID(ID);
+            busCategory.DeleteActor(ca);
+            Reload();
+        }
+
+        private void delCategory_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
+            Category ca = busCategory.GetCategoryByID(ID);
+            busCategory.DeleteActor(ca);
+            Reload();
+        }
     }
 }

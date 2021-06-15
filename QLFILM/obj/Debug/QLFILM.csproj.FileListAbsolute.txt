@@ -88,3 +88,4 @@ D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csproj.CopyComplet
 D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.exe
 D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.pdb
 D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csprojAssemblyReference.cache
+D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.csprojAssemblyReference.cache

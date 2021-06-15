@@ -20,6 +20,10 @@ namespace QLFILM.BUS
         {
             dg.DataSource = daoCategory.GetCategory();
         }
+        public dynamic GetCategoryByID(string ID)
+        {
+            return daoCategory.GetCategoryByID(ID);
+        }
         public void AddCategory(Category ca)
         {
             try
@@ -31,6 +35,23 @@ namespace QLFILM.BUS
             {
                 MessageBox.Show("Error");
             }
+        }
+        public void DeleteActor(Category ca)
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoCategory.DeleteCategory(ca);
+                    MessageBox.Show("Delete Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Delete Error");
+                }
+            }
+
         }
     }
 }

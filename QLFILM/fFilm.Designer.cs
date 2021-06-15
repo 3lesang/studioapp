@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.exitFilm = new System.Windows.Forms.Button();
             this.editFilm = new System.Windows.Forms.Button();
             this.addFilm = new System.Windows.Forms.Button();
             this.delFilm = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtGross = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.cbCategory = new System.Windows.Forms.ComboBox();
             this.cbDrector = new System.Windows.Forms.ComboBox();
@@ -57,10 +59,12 @@
             this.txtEnglishTitle = new System.Windows.Forms.TextBox();
             this.txtFilmID = new System.Windows.Forms.TextBox();
             this.dgFilm = new System.Windows.Forms.DataGridView();
-            this.txtGross = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFilm)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -120,6 +124,7 @@
             this.addFilm.TabIndex = 0;
             this.addFilm.Text = "ADD";
             this.addFilm.UseVisualStyleBackColor = false;
+            this.addFilm.Click += new System.EventHandler(this.addFilm_Click);
             // 
             // delFilm
             // 
@@ -135,6 +140,7 @@
             this.delFilm.TabIndex = 1;
             this.delFilm.Text = "DELETE";
             this.delFilm.UseVisualStyleBackColor = false;
+            this.delFilm.Click += new System.EventHandler(this.delFilm_Click);
             // 
             // panel1
             // 
@@ -167,6 +173,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1178, 208);
             this.panel1.TabIndex = 4;
+            // 
+            // txtGross
+            // 
+            this.txtGross.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGross.Location = new System.Drawing.Point(994, 18);
+            this.txtGross.Name = "txtGross";
+            this.txtGross.Size = new System.Drawing.Size(158, 30);
+            this.txtGross.TabIndex = 26;
             // 
             // label11
             // 
@@ -386,37 +400,46 @@
             this.dgFilm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgFilm.BackgroundColor = System.Drawing.Color.White;
             this.dgFilm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgFilm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgFilm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgFilm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgFilm.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgFilm.ContextMenuStrip = this.contextMenuStrip1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgFilm.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgFilm.Dock = System.Windows.Forms.DockStyle.Top;
             this.dgFilm.Location = new System.Drawing.Point(0, 0);
             this.dgFilm.Name = "dgFilm";
             this.dgFilm.RowTemplate.Height = 28;
             this.dgFilm.Size = new System.Drawing.Size(1178, 480);
             this.dgFilm.TabIndex = 3;
+            this.dgFilm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgFilm_CellClick);
             // 
-            // txtGross
+            // contextMenuStrip1
             // 
-            this.txtGross.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtGross.Location = new System.Drawing.Point(994, 18);
-            this.txtGross.Name = "txtGross";
-            this.txtGross.Size = new System.Drawing.Size(158, 30);
-            this.txtGross.TabIndex = 26;
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(135, 34);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(240, 30);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // fFilm
             // 
@@ -436,6 +459,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFilm)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -470,5 +494,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtGross;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
