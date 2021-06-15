@@ -77,5 +77,37 @@ namespace QLFILM
             busCategory.UpdateCategory();
             Reload();
         }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
+            Category ca = busCategory.GetCategoryByID(ID);
+            busCategory.DeleteCategory(ca);
+            Reload();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
+            Category ca = busCategory.GetCategoryByID(ID);
+            ca.CID = this.txtCategoryID.Text;
+            ca.CategoryName = this.txtCategoryName.Text;
+            busCategory.UpdateCategory();
+            Reload();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Category ca = new Category();
+            ca.CID = txtCategoryID.Text;
+            ca.CategoryName = txtCategoryName.Text;
+            busCategory.AddCategory(ca);
+            Reload();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

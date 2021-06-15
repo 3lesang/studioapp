@@ -61,5 +61,30 @@ namespace QLFILM
             childForm.BringToFront();
             childForm.Show();
         }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new fActor());
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new fFilm());
+        }
+
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            openChildForm(new fDirector());
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new fCategory());
+        }
     }
 } 

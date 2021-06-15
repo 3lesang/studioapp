@@ -77,5 +77,37 @@ namespace QLFILM
             busDirector.UpdateDirector();
             Reload();
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Director di = new Director();
+            di.DID = txtDirectorID.Text;
+            di.DirectorName = txtDirectorName.Text;
+            busDirector.AddDirector(di);
+            Reload();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgDirector.CurrentRow.Cells[0].Value.ToString();
+            Director di = busDirector.GetDirectorByID(ID);
+            di.DID = this.txtDirectorID.Text;
+            di.DirectorName = this.txtDirectorName.Text;
+            busDirector.UpdateDirector();
+            Reload();
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgDirector.CurrentRow.Cells[0].Value.ToString();
+            Director di = busDirector.GetDirectorByID(ID);
+            busDirector.DeleteDirector(di);
+            Reload();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

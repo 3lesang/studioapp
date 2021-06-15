@@ -60,11 +60,11 @@ namespace QLFILM.BUS
                 try
                 {
                     daoFilm.UpdateFilm();
-                    MessageBox.Show("Delete Success");
+                    MessageBox.Show("Update Success");
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Delete Error");
+                    MessageBox.Show("Update Error");
                 }
             }
         }

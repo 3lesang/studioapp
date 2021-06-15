@@ -77,5 +77,37 @@ namespace QLFILM
             busActor.UpdateActor();
             Reload();
         }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgActor.CurrentRow.Cells[0].Value.ToString();
+            Actor ac = busActor.GetActorByID(ID);
+            busActor.DeleteActor(ac);
+            Reload();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgActor.CurrentRow.Cells[0].Value.ToString();
+            Actor ac = busActor.GetActorByID(ID);
+            ac.AID = this.txtActorID.Text;
+            ac.ActorName = this.txtActorName.Text;
+            busActor.UpdateActor();
+            Reload();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Actor ac = new Actor();
+            ac.AID = txtActorID.Text;
+            ac.ActorName = txtActorName.Text;
+            busActor.AddActor(ac);
+            Reload();
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

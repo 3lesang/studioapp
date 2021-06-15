@@ -51,8 +51,37 @@ namespace QLFILM
             this.txtGross.Text = f.Gross.ToString();
 
         }
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgFilm.CurrentRow.Cells[0].Value.ToString();
+            Film f = busFilm.GetFilmByID(ID);
+            busFilm.DeleteFilm(f);
+            Reload();
+        }
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgFilm.CurrentRow.Cells[0].Value.ToString();
+            Film f = busFilm.GetFilmByID(ID);
+            busFilm.DeleteFilm(f);
+            Reload();
+        }
 
-        private void addFilm_Click(object sender, EventArgs e)
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgFilm.CurrentRow.Cells[0].Value.ToString();
+            Film f = busFilm.GetFilmByID(ID);
+            f.FID = this.txtFilmID.Text;
+            f.EnglishTitle = this.txtEnglishTitle.Text;
+            f.VietnameseTitle = this.txtVietnameseTitle.Text;
+            f.Year = int.Parse(this.txtYear.Text);
+            f.Length = double.Parse(this.txtLength.Text);
+            f.Rating = double.Parse(this.txtGating.Text);
+            f.Gross = double.Parse(this.txtGross.Text);
+            busFilm.UpdateFilm();
+            Reload();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
         {
             Film f = new Film();
             f.FID = txtFilmID.Text;
@@ -66,35 +95,9 @@ namespace QLFILM
             Reload();
         }
 
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void iconButton4_Click(object sender, EventArgs e)
         {
-            string ID = this.dgFilm.CurrentRow.Cells[0].Value.ToString();
-            Film f = busFilm.GetFilmByID(ID);
-            busFilm.DeleteFilm(f);
-            Reload();
-        }
-
-        private void delFilm_Click(object sender, EventArgs e)
-        {
-            string ID = this.dgFilm.CurrentRow.Cells[0].Value.ToString();
-            Film f = busFilm.GetFilmByID(ID);
-            busFilm.DeleteFilm(f);
-            Reload();
-        }
-
-        private void editFilm_Click(object sender, EventArgs e)
-        {
-            string ID = this.dgFilm.CurrentRow.Cells[0].Value.ToString();
-            Film f = busFilm.GetFilmByID(ID);
-            f.FID = this.txtFilmID.Text;
-            f.EnglishTitle = this.txtEnglishTitle.Text;
-            f.VietnameseTitle = this.txtVietnameseTitle.Text;
-            f.Year = int.Parse(this.txtYear.Text);
-            f.Length = int.Parse(this.txtLength.Text);
-            f.Rating = double.Parse(this.txtGating.Text);
-            f.Gross = double.Parse(this.txtGross.Text);
-            busFilm.UpdateFilm();
-            Reload();
+            this.Close();
         }
     }
 }
