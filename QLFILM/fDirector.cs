@@ -56,7 +56,7 @@ namespace QLFILM
         {
             string ID = this.dgDirector.CurrentRow.Cells[0].Value.ToString();
             Director di = busDirector.GetDirectorByID(ID);
-            busDirector.DeleteActor(di);
+            busDirector.DeleteDirector(di);
             Reload();
         }
 
@@ -64,7 +64,17 @@ namespace QLFILM
         {
             string ID = this.dgDirector.CurrentRow.Cells[0].Value.ToString();
             Director di = busDirector.GetDirectorByID(ID);
-            busDirector.DeleteActor(di);
+            busDirector.DeleteDirector(di);
+            Reload();
+        }
+
+        private void editDirector_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgDirector.CurrentRow.Cells[0].Value.ToString();
+            Director di = busDirector.GetDirectorByID(ID);
+            di.DID = this.txtDirectorID.Text;
+            di.DirectorName = this.txtDirectorName.Text;
+            busDirector.UpdateDirector();
             Reload();
         }
     }

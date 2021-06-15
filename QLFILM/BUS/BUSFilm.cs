@@ -51,7 +51,22 @@ namespace QLFILM.BUS
                     MessageBox.Show("Delete Error");
                 }
             }
-
+        }
+        public void UpdateFilm()
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoFilm.UpdateFilm();
+                    MessageBox.Show("Delete Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Delete Error");
+                }
+            }
         }
         public void ShowActor(ComboBox cb)
         {

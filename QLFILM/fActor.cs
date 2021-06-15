@@ -67,5 +67,15 @@ namespace QLFILM
             busActor.DeleteActor(ac);
             Reload();
         }
+
+        private void editActor_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgActor.CurrentRow.Cells[0].Value.ToString();
+            Actor ac = busActor.GetActorByID(ID);
+            ac.AID = this.txtActorID.Text;
+            ac.ActorName = this.txtActorName.Text;
+            busActor.UpdateActor();
+            Reload();
+        }
     }
 }

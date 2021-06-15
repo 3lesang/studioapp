@@ -53,5 +53,22 @@ namespace QLFILM.BUS
             }
             
         }
+        public void UpdateActor()
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoActor.UpdateActor();
+                    MessageBox.Show("Update Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Update Error");
+                }
+            }
+
+        }
     }
 }

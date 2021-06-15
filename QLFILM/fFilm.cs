@@ -81,5 +81,20 @@ namespace QLFILM
             busFilm.DeleteFilm(f);
             Reload();
         }
+
+        private void editFilm_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgFilm.CurrentRow.Cells[0].Value.ToString();
+            Film f = busFilm.GetFilmByID(ID);
+            f.FID = this.txtFilmID.Text;
+            f.EnglishTitle = this.txtEnglishTitle.Text;
+            f.VietnameseTitle = this.txtVietnameseTitle.Text;
+            f.Year = int.Parse(this.txtYear.Text);
+            f.Length = int.Parse(this.txtLength.Text);
+            f.Rating = double.Parse(this.txtGating.Text);
+            f.Gross = double.Parse(this.txtGross.Text);
+            busFilm.UpdateFilm();
+            Reload();
+        }
     }
 }

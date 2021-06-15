@@ -36,5 +36,9 @@ namespace QLFILM.DAO
             db.Categories.Remove(ca);
             db.SaveChanges();
         }
+        public void UpdateCategory()
+        {
+            db.SaveChanges();
+        }
     }
 }

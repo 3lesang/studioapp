@@ -36,5 +36,9 @@ namespace QLFILM.DAO
             db.Actors.Remove(ac);
             db.SaveChanges();
         }
+        public void UpdateActor()
+        {
+            db.SaveChanges();
+        }
     }
 }

@@ -36,7 +36,7 @@ namespace QLFILM.BUS
                 MessageBox.Show("Error");
             }
         }
-        public void DeleteActor(Director di)
+        public void DeleteDirector(Director di)
         {
             DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
@@ -44,6 +44,22 @@ namespace QLFILM.BUS
                 try
                 {
                     daoDirector.DeleteDirector(di);
+                    MessageBox.Show("Delete Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Delete Error");
+                }
+            }
+        }
+        public void UpdateDirector()
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoDirector.UpdateDirector();
                     MessageBox.Show("Delete Success");
                 }
                 catch (Exception)

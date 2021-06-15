@@ -35,6 +35,10 @@ namespace QLFILM.DAO
             db.Directors.Remove(di);
             db.SaveChanges();
         }
+        public void UpdateDirector()
+        {
+            db.SaveChanges();
+        }
 
     }
 }

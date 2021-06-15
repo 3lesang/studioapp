@@ -36,7 +36,7 @@ namespace QLFILM.BUS
                 MessageBox.Show("Error");
             }
         }
-        public void DeleteActor(Category ca)
+        public void DeleteCategory(Category ca)
         {
             DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
@@ -51,7 +51,22 @@ namespace QLFILM.BUS
                     MessageBox.Show("Delete Error");
                 }
             }
-
+        }
+        public void UpdateCategory()
+        {
+            DialogResult result = MessageBox.Show("Are you sure?", "Confirm", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    daoCategory.UpdateCategory();
+                    MessageBox.Show("Update Success");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Update Error");
+                }
+            }
         }
     }
 }

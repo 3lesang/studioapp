@@ -56,7 +56,7 @@ namespace QLFILM
         {
             string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
             Category ca = busCategory.GetCategoryByID(ID);
-            busCategory.DeleteActor(ca);
+            busCategory.DeleteCategory(ca);
             Reload();
         }
 
@@ -64,7 +64,17 @@ namespace QLFILM
         {
             string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
             Category ca = busCategory.GetCategoryByID(ID);
-            busCategory.DeleteActor(ca);
+            busCategory.DeleteCategory(ca);
+            Reload();
+        }
+
+        private void editCategory_Click(object sender, EventArgs e)
+        {
+            string ID = this.dgCategory.CurrentRow.Cells[0].Value.ToString();
+            Category ca = busCategory.GetCategoryByID(ID);
+            ca.CID = this.txtCategoryID.Text;
+            ca.CategoryName = this.txtCategoryName.Text;
+            busCategory.UpdateCategory();
             Reload();
         }
     }

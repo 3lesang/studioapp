@@ -40,6 +40,10 @@ namespace QLFILM.DAO
             db.Films.Remove(f);
             db.SaveChanges();
         }
+        public void UpdateFilm()
+        {
+            db.SaveChanges();
+        }
         public dynamic GetActor()
         {
             var actor = db.Actors
