@@ -75,7 +75,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgActor.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgActor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgActor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgActor.Location = new System.Drawing.Point(0, 0);
             this.dgActor.Name = "dgActor";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -88,7 +88,7 @@
             this.dgActor.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgActor.RowTemplate.Height = 40;
             this.dgActor.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgActor.Size = new System.Drawing.Size(1178, 750);
+            this.dgActor.Size = new System.Drawing.Size(1178, 688);
             this.dgActor.TabIndex = 0;
             this.dgActor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgActor_CellClick);
             // 

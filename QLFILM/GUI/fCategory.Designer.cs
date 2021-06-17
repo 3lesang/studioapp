@@ -1,6 +1,6 @@
 ﻿namespace QLFILM
 {
-    partial class fDirector
+    partial class fCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -31,31 +31,96 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgDirector = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCategoryName = new System.Windows.Forms.TextBox();
+            this.txtCategoryID = new System.Windows.Forms.TextBox();
+            this.dgCategory = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txtDirectorName = new System.Windows.Forms.TextBox();
-            this.txtDirectorID = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dgDirector)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCategory)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgDirector
+            // panel1
             // 
-            this.dgDirector.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgDirector.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
-            this.dgDirector.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(71)))), ((int)(((byte)(90)))));
+            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtCategoryName);
+            this.panel1.Controls.Add(this.txtCategoryID);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 558);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1178, 130);
+            this.panel1.TabIndex = 7;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(5, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(81, 32);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "INFOR";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(395, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 32);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "NAME";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(439, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 32);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "ID";
+            // 
+            // txtCategoryName
+            // 
+            this.txtCategoryName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCategoryName.Font = new System.Drawing.Font("Segoe UI Semilight", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryName.Location = new System.Drawing.Point(483, 68);
+            this.txtCategoryName.Name = "txtCategoryName";
+            this.txtCategoryName.Size = new System.Drawing.Size(191, 50);
+            this.txtCategoryName.TabIndex = 1;
+            // 
+            // txtCategoryID
+            // 
+            this.txtCategoryID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCategoryID.Font = new System.Drawing.Font("Segoe UI Semilight", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryID.Location = new System.Drawing.Point(483, 6);
+            this.txtCategoryID.Name = "txtCategoryID";
+            this.txtCategoryID.Size = new System.Drawing.Size(191, 50);
+            this.txtCategoryID.TabIndex = 0;
+            // 
+            // dgCategory
+            // 
+            this.dgCategory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgCategory.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(242)))));
+            this.dgCategory.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -63,25 +128,24 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(114)))), ((int)(((byte)(164)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgDirector.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgDirector.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgDirector.ContextMenuStrip = this.contextMenuStrip1;
+            this.dgCategory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCategory.ContextMenuStrip = this.contextMenuStrip1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(114)))), ((int)(((byte)(164)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgDirector.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgDirector.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgDirector.Location = new System.Drawing.Point(0, 0);
-            this.dgDirector.MinimumSize = new System.Drawing.Size(1178, 750);
-            this.dgDirector.Name = "dgDirector";
-            this.dgDirector.RowTemplate.Height = 40;
-            this.dgDirector.Size = new System.Drawing.Size(1178, 750);
-            this.dgDirector.TabIndex = 3;
-            this.dgDirector.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgDirector_CellClick);
+            this.dgCategory.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgCategory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgCategory.Location = new System.Drawing.Point(0, 0);
+            this.dgCategory.Name = "dgCategory";
+            this.dgCategory.RowTemplate.Height = 40;
+            this.dgCategory.Size = new System.Drawing.Size(1178, 688);
+            this.dgCategory.TabIndex = 6;
+            this.dgCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCategory_CellClick);
             // 
             // contextMenuStrip1
             // 
@@ -98,73 +162,6 @@
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(71)))), ((int)(((byte)(90)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.txtDirectorName);
-            this.panel2.Controls.Add(this.txtDirectorID);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 558);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1178, 130);
-            this.panel2.TabIndex = 25;
-            // 
-            // txtDirectorName
-            // 
-            this.txtDirectorName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDirectorName.Font = new System.Drawing.Font("Segoe UI Semilight", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorName.Location = new System.Drawing.Point(503, 67);
-            this.txtDirectorName.Name = "txtDirectorName";
-            this.txtDirectorName.Size = new System.Drawing.Size(169, 50);
-            this.txtDirectorName.TabIndex = 25;
-            // 
-            // txtDirectorID
-            // 
-            this.txtDirectorID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDirectorID.Font = new System.Drawing.Font("Segoe UI Semilight", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorID.Location = new System.Drawing.Point(503, 5);
-            this.txtDirectorID.Name = "txtDirectorID";
-            this.txtDirectorID.Size = new System.Drawing.Size(169, 50);
-            this.txtDirectorID.TabIndex = 0;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(81, 32);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "INFOR";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(459, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 32);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(417, 74);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 32);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "NAME";
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.iconButton4);
@@ -175,7 +172,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 508);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1178, 50);
-            this.panel3.TabIndex = 27;
+            this.panel3.TabIndex = 9;
             // 
             // iconButton4
             // 
@@ -265,37 +262,38 @@
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
-            // fDirector
+            // fCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1178, 688);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.dgDirector);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dgCategory);
+            this.ForeColor = System.Drawing.Color.Black;
             this.MaximizeBox = false;
-            this.Name = "fDirector";
-            this.Text = "Director";
-            this.Load += new System.EventHandler(this.fDirector_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgDirector)).EndInit();
+            this.Name = "fCategory";
+            this.Text = "Category";
+            this.Load += new System.EventHandler(this.fCategory_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCategory)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dgDirector;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtDirectorID;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label1;
+
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDirectorName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCategoryName;
+        private System.Windows.Forms.TextBox txtCategoryID;
+        private System.Windows.Forms.DataGridView dgCategory;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.Panel panel3;

@@ -87,6 +87,7 @@ D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csproj.CoreCompile
 D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csproj.CopyComplete
 D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.exe
 D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.pdb
-D:\sang\Documents\QLFILM - Copy\QLFILM\obj\Debug\QLFILM.csprojAssemblyReference.cache
 D:\sang\Documents\gitresource\winfrom\QLFILM\bin\Debug\FontAwesome.Sharp.dll
 D:\sang\Documents\gitresource\winfrom\QLFILM\obj\Debug\QLFILM.csprojAssemblyReference.cache
+D:\sang\Documents\QLFILM - Copy\QLFILM\bin\Debug\FontAwesome.Sharp.dll
+D:\sang\Documents\QLFILM - Copy\QLFILM\bin\Debug\Guna.UI.dll

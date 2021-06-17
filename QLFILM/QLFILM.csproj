@@ -45,9 +45,14 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Downloads\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,34 +73,34 @@
     <Compile Include="DAO\DAOCategory.cs" />
     <Compile Include="DAO\DAODirector.cs" />
     <Compile Include="DAO\DAOFilm.cs" />
-    <Compile Include="fActor.cs">
+    <Compile Include="GUI\fActor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fActor.Designer.cs">
+    <Compile Include="GUI\fActor.Designer.cs">
       <DependentUpon>fActor.cs</DependentUpon>
     </Compile>
-    <Compile Include="fCategory.cs">
+    <Compile Include="GUI\fCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fCategory.Designer.cs">
+    <Compile Include="GUI\fCategory.Designer.cs">
       <DependentUpon>fCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="fDirector.cs">
+    <Compile Include="GUI\fDirector.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fDirector.Designer.cs">
+    <Compile Include="GUI\fDirector.Designer.cs">
       <DependentUpon>fDirector.cs</DependentUpon>
     </Compile>
-    <Compile Include="fFilm.cs">
+    <Compile Include="GUI\fFilm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fFilm.Designer.cs">
+    <Compile Include="GUI\fFilm.Designer.cs">
       <DependentUpon>fFilm.cs</DependentUpon>
     </Compile>
-    <Compile Include="fMain.cs">
+    <Compile Include="GUI\fMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fMain.Designer.cs">
+    <Compile Include="GUI\fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202106141627065_CreateTable.cs" />
@@ -140,19 +145,19 @@
     <Compile Include="Model\FilmActor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fActor.resx">
+    <EmbeddedResource Include="GUI\fActor.resx">
       <DependentUpon>fActor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fCategory.resx">
+    <EmbeddedResource Include="GUI\fCategory.resx">
       <DependentUpon>fCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fDirector.resx">
+    <EmbeddedResource Include="GUI\fDirector.resx">
       <DependentUpon>fDirector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fFilm.resx">
+    <EmbeddedResource Include="GUI\fFilm.resx">
       <DependentUpon>fFilm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fMain.resx">
+    <EmbeddedResource Include="GUI\fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106141627065_CreateTable.resx">
@@ -181,19 +186,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -204,10 +209,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="logo\bg.jpg" />
-    <Content Include="logo\logofilm.ico" />
+    <Folder Include="Img\" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

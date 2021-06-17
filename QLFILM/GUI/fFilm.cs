@@ -74,9 +74,30 @@ namespace QLFILM
             f.EnglishTitle = this.txtEnglishTitle.Text;
             f.VietnameseTitle = this.txtVietnameseTitle.Text;
             f.Year = int.Parse(this.txtYear.Text);
-            f.Length = Convert.ToDouble(this.txtLength.Text);
-            f.Rating = Convert.ToDouble(this.txtGating.Text);
-            f.Gross = Convert.ToDouble(this.txtGross.Text);
+            try
+            {
+                f.Length = Convert.ToDouble(txtLength.Text);
+            }
+            catch (Exception)
+            {
+                f.Length = null;
+            }
+            try
+            {
+                f.Rating = Convert.ToDouble(txtGating.Text);
+            }
+            catch (Exception)
+            {
+                f.Rating = null;
+            }
+            try
+            {
+                f.Gross = Convert.ToDouble(txtGross.Text);
+            }
+            catch (Exception)
+            {
+                f.Gross = null;
+            }
             busFilm.UpdateFilm();
             Reload();
         }

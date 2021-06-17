@@ -355,12 +355,12 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgFilm.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgFilm.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dgFilm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgFilm.Location = new System.Drawing.Point(0, 0);
             this.dgFilm.Name = "dgFilm";
             this.dgFilm.RowTemplate.Height = 40;
             this.dgFilm.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dgFilm.Size = new System.Drawing.Size(1178, 750);
+            this.dgFilm.Size = new System.Drawing.Size(1178, 688);
             this.dgFilm.TabIndex = 3;
             this.dgFilm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgFilm_CellClick);
             // 
